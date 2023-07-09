@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_july05/models/baby_dragon.dart';
+import 'package:flutter_ui_july05/models/balloon.dart';
+import 'package:flutter_ui_july05/models/barbarian.dart';
+import 'package:flutter_ui_july05/models/dragon.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -31,27 +35,19 @@ class _HomePageState extends State<HomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset('images/group1.png'),
-          // Container(
-          //   decoration: const BoxDecoration(color: Colors.transparent),
-          //   height: _mediaQuery.height * 0.23,
-          //   width: _mediaQuery.width * 1,
-          //   child: Image.asset('images/group1.png'),
-          // ),
-
-          Stack(
+          SizedBox(
+            height: 50,
+          ),
+          Row(
             children: [
-              Container(
-                decoration: BoxDecoration(
-                    color: Colors.amber.shade200,
-                    borderRadius: BorderRadius.circular(22)),
-                height: 250,
-                width: 180,
-              ),
-              Image.asset('images/barbarian.png'),
-              // Positioned(
-              //     left: 0,
-              //     bottom: 40,
-              //     child),
+              BarbarianModel(),
+              BalloonModel(),
+            ],
+          ),
+          Row(
+            children: [
+              BabyDragonModel(),
+              DragonModel(),
             ],
           ),
         ],
