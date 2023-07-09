@@ -37,17 +37,21 @@ class _HomePageState extends State<HomePage> {
           //   width: _mediaQuery.width * 1,
           //   child: Image.asset('images/group1.png'),
           // ),
-          SizedBox(
-            height: 30,
-          ),
+
           Stack(
             children: [
               Container(
-                decoration: BoxDecoration(color: Colors.amber.shade200),
-                height: 100,
-                width: 100,
+                decoration: BoxDecoration(
+                    color: Colors.amber.shade200,
+                    borderRadius: BorderRadius.circular(22)),
+                height: 250,
+                width: 180,
               ),
-              Image.asset('images/barbarian.png')
+              Image.asset('images/barbarian.png'),
+              // Positioned(
+              //     left: 0,
+              //     bottom: 40,
+              //     child),
             ],
           ),
         ],
