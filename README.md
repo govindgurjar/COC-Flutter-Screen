@@ -1,8 +1,10 @@
 # flutter_ui_july05
 
-A new Flutter project.
-
 ## Getting Started
+
+![COC 01](https://github.com/govindgurjar/COC-Flutter-Screen/assets/83970520/125e0459-e9d7-4f19-afba-f4ff2aa27200)
+
+
 
 This project is a starting point for a Flutter application.
 
