@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_july05/models/model_02/barbarian_detail.dart';
 
 class BarbarianModel extends StatefulWidget {
   const BarbarianModel({super.key});
@@ -40,7 +41,19 @@ class _BarbarianModelState extends State<BarbarianModel> {
           Positioned(
             bottom: 50,
             right: 10,
-            child: Image.asset('images/barbarian.png'),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BarbarianDetailPage(),
+                    ));
+              },
+              child: Hero(
+                tag: 'barbarian',
+                child: Image.asset('images/barbarian.png'),
+              ),
+            ),
           ),
         ],
       ),

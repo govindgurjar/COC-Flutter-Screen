@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_july05/models/baby_dragon.dart';
-import 'package:flutter_ui_july05/models/balloon.dart';
-import 'package:flutter_ui_july05/models/barbarian.dart';
-import 'package:flutter_ui_july05/models/dragon.dart';
+import 'package:flutter_ui_july05/models/model_01/baby_dragon.dart';
+import 'package:flutter_ui_july05/models/model_01/barbarian.dart';
+
+import 'models/model_01/balloon.dart';
+import 'models/model_01/dragon.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
